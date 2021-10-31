@@ -1,8 +1,8 @@
 # 첫 번째 목표
 
-@ComponentScan 어노테이션 만들기
+- **@ComponentScan 어노테이션 만들기**
 
-기본 생김새
+[ 기본 생김새 ]
 
 ```java
 @Target(ElementType.TYPE)
@@ -22,7 +22,7 @@ public class Application {
 }
 ```
 
-요구사항
+[ 요구사항 ]
 
 - ComponentScan 어노테이션에서 basePackage
   - 지정된 경우, 지정된 패키지를 스캔
@@ -36,9 +36,9 @@ public class Application {
   
 # 두 번째 목표
 
-DispatcherServlet 만들기
+- **DispatcherServlet 만들기**
 
-기본 생김새
+[ 기본 생김새 ]
 
 ```java
 public class DispatcherServlet {
@@ -49,14 +49,14 @@ public class DispatcherServlet {
 }
 ```
 
-요구사항
+[ 요구사항 ]
 
 1. 앞서 만든 스캐너로 핸들러(@Controller, @RestController) 찾아서 등록
 2. doDispatch 구현
 3. WAS에 등록
 4. 실행
 
-특이사항
+[ 특이사항 ]
 
 컨트롤러 기본 생김새
 
@@ -73,9 +73,9 @@ public class TestController {
 
 # 세 번째 목표
 
-간단한 서비스 만들기 (DB 사용 X)
+- **간단한 서비스 만들기 (DB 사용 X)**
 
-요구사항
+[ 요구사항 ]
 
 1. 회원가입 페이지
 2. 로그인 페이지
